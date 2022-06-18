@@ -107,7 +107,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Error.sol": "Errors"
+			"Error.sol": "Errors"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -121,7 +121,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Error.sol": {
+		"Error.sol": {
 			"keccak256": "0x6721f1f6ee0b8060a38196fad3e66e023c237c81453818fbabf88b0511f8eab4",
 			"license": "GPL-3.0",
 			"urls": [
