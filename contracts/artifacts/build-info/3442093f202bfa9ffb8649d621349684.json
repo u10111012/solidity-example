@@ -1,0 +1,324 @@
+{
+	"id": "3442093f202bfa9ffb8649d621349684",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"Day5Mutability_.sol": {
+				"content": "// SPDX-License-Identifier: MIT\n\npragma solidity 0.8.7;\n\n// pure 單純讀取\n// view 讀取鏈上資料 (state varibles)\n// default 可\n\ncontract Mutability {\n    \n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"Day5Mutability_.sol": {
+				"Mutability": {
+					"abi": [],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"Day5Mutability_.sol\":138:166  contract Mutability {... */\n  mstore(0x40, 0x80)\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"Day5Mutability_.sol\":138:166  contract Mutability {... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa264697066735822122050262f8c12dd39a75732bcc163b8299cbf4561e0272a833ce8301f5e269f5ef764736f6c63430008070033\n}\n",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122050262f8c12dd39a75732bcc163b8299cbf4561e0272a833ce8301f5e269f5ef764736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 POP 0x26 0x2F DUP13 SLT 0xDD CODECOPY 0xA7 JUMPI ORIGIN 0xBC 0xC1 PUSH4 0xB8299CBF GASLIMIT PUSH2 0xE027 0x2A DUP4 EXTCODECOPY 0xE8 ADDRESS 0x1F 0x5E 0x26 SWAP16 0x5E 0xF7 PUSH5 0x736F6C6343 STOP ADDMOD SMOD STOP CALLER ",
+							"sourceMap": "138:28:0:-:0;;;;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea264697066735822122050262f8c12dd39a75732bcc163b8299cbf4561e0272a833ce8301f5e269f5ef764736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 POP 0x26 0x2F DUP13 SLT 0xDD CODECOPY 0xA7 JUMPI ORIGIN 0xBC 0xC1 PUSH4 0xB8299CBF GASLIMIT PUSH2 0xE027 0x2A DUP4 EXTCODECOPY 0xE8 ADDRESS 0x1F 0x5E 0x26 SWAP16 0x5E 0xF7 PUSH5 0x736F6C6343 STOP ADDMOD SMOD STOP CALLER ",
+							"sourceMap": "138:28:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 138,
+									"end": 166,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 138,
+									"end": 166,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 138,
+									"end": 166,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 138,
+									"end": 166,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 138,
+									"end": 166,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 138,
+									"end": 166,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 138,
+									"end": 166,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 138,
+									"end": 166,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 138,
+									"end": 166,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 138,
+									"end": 166,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 138,
+									"end": 166,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 138,
+									"end": 166,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 138,
+									"end": 166,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 138,
+									"end": 166,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 138,
+									"end": 166,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 138,
+									"end": 166,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 138,
+									"end": 166,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 138,
+									"end": 166,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 138,
+									"end": 166,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 138,
+									"end": 166,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 138,
+									"end": 166,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a264697066735822122050262f8c12dd39a75732bcc163b8299cbf4561e0272a833ce8301f5e269f5ef764736f6c63430008070033",
+									".code": [
+										{
+											"begin": 138,
+											"end": 166,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 138,
+											"end": 166,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 138,
+											"end": 166,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 138,
+											"end": 166,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 138,
+											"end": 166,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 138,
+											"end": 166,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"Day5Mutability_.sol\":\"Mutability\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"Day5Mutability_.sol\":{\"keccak256\":\"0xe0c1f2b01b4fc8773f36f979b643f728f5cfed8afe1280dc34fb7d6c402a8d96\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8049e3dfb9e4eab20a7858b39c14971a8f6380fb2797a54ddbc36e556d5abffd\",\"dweb:/ipfs/QmVrXfGVsWR5bFa8S89wDKXPwTGLrVLKE1bAGGr8ucvJ8z\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"Day5Mutability_.sol": {
+				"ast": {
+					"absolutePath": "Day5Mutability_.sol",
+					"exportedSymbols": {
+						"Mutability": [
+							2
+						]
+					},
+					"id": 3,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"0.8",
+								".7"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "33:22:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 2,
+							"linearizedBaseContracts": [
+								2
+							],
+							"name": "Mutability",
+							"nameLocation": "147:10:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [],
+							"scope": 3,
+							"src": "138:28:0",
+							"usedErrors": []
+						}
+					],
+					"src": "33:133:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
