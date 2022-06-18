@@ -1,1 +1,3 @@
 # solidity-example
+
+`npm install`
