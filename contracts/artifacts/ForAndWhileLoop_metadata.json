@@ -1,0 +1,53 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "loops",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Day9_ForAndWhileLoop.sol": "ForAndWhileLoop"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Day9_ForAndWhileLoop.sol": {
+			"keccak256": "0x1f3c0da0fb7aa1c0c49aec29d0a31b9ce99943ecf2ba26cf3dce452208676571",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6a2e4ff50cc6a61b3b0ecf4ef583e699a8699eebb03969aecbc3d290fce029b3",
+				"dweb:/ipfs/QmY9P4DdaHQt6E3iLYCXwAhuGd62TxpMGw7jgkRmmKKRCj"
+			]
+		}
+	},
+	"version": 1
+}
