@@ -7,6 +7,8 @@ pragma solidity ^0.8.7;
 // Destructuring assignment
 
 contract FunctionOutput {
+
+    
     function returnMany () public pure returns (uint , bool) {
         return (1,true);
     }
@@ -21,7 +23,7 @@ contract FunctionOutput {
     }
 
     function destructuringAssignments () public pure {
-        (uint  x, bool b) = returnMany();
-        // (, bool _y) = returnMany();
+        (uint x, bool b) = returnMany();
+        (, bool _b) = returnMany();
     }
 }
