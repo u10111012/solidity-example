@@ -9,16 +9,11 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "x",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "y",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "testMax",
+				"name": "arr",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -26,7 +21,20 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testFind",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -43,7 +51,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Day40_Library.sol": "Test"
+			"Day40_Library.sol": "TestArray"
 		},
 		"evmVersion": "london",
 		"libraries": {},
