@@ -24,6 +24,6 @@
 
 背景執行
 
-`remixd -s <absolute-path-to-the-shared-folder> --remix-ide https://remix.ethereum.org`
+`remixd -s <pwd執行後的路徑貼到這(沒有<>)> --remix-ide https://remix.ethereum.org`
 
 點選連結 --> connect localhost
