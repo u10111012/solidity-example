@@ -1,28 +1,28 @@
 {
 	"compiler": {
-		"version": "0.8.7+commit.e28d00a7"
+		"version": "0.8.15+commit.e14f2714"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [],
-				"name": "anyOneCanCall",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "onlyOwnerCanCall",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
 			},
 			{
 				"inputs": [],
@@ -38,22 +38,43 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_newOwner",
+						"name": "newOwner",
 						"type": "address"
 					}
 				],
-				"name": "setOwner",
+				"name": "transferOwnership",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
 		"devdoc": {
+			"details": "Contract module which provides a basic access control mechanism, where there is an account (an owner) that can be granted exclusive access to specific functions. By default, the owner account will be the one that deploys the contract. This can later be changed with {transferOwnership}. This module is used through inheritance. It will make available the modifier `onlyOwner`, which can be applied to your functions to restrict their use to the owner.",
 			"kind": "dev",
-			"methods": {},
+			"methods": {
+				"constructor": {
+					"details": "Initializes the contract setting the deployer as the initial owner."
+				},
+				"owner()": {
+					"details": "Returns the address of the current owner."
+				},
+				"renounceOwnership()": {
+					"details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+				},
+				"transferOwnership(address)": {
+					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+				}
+			},
 			"version": 1
 		},
 		"userdoc": {
@@ -64,7 +85,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Day13_Practice_Ownable.sol": "Ownable"
+			"Day52_ERC1155_flat.sol": "Ownable"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -78,12 +99,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Day13_Practice_Ownable.sol": {
-			"keccak256": "0x8ea7727fcc92e00963726a6f89fdf948f8b3f55137dacdab4a4dfe6e20cb86d3",
+		"Day52_ERC1155_flat.sol": {
+			"keccak256": "0xe122f073b480afa2baf1fc5504f47fdccf894d584a28f25829cb33a76e21bb9e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b473cec27378cd8b72fd1164f6cd4567059258287e3714b73fe011f94af268eb",
-				"dweb:/ipfs/QmYkivJjQPToeDQi94hCBvPyC7wp6Xdx5wLN4r1boBDvcL"
+				"bzz-raw://55f66f5f820de218d9e1703124570aa391fa7c26aa066f859012f053f357749e",
+				"dweb:/ipfs/QmV8Yw58Ghn8FLGVJJ5B1meGkrnD1CRFRdwFkv8GnaCHe2"
 			]
 		}
 	},
