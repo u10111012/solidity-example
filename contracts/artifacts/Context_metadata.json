@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.15+commit.e14f2714"
+		"version": "0.8.7+commit.e28d00a7"
 	},
 	"language": "Solidity",
 	"output": {
@@ -19,7 +19,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Day52_ERC1155_flat.sol": "Context"
+			"Day46_ERC20_flat.sol": "Context"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -33,12 +33,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Day52_ERC1155_flat.sol": {
-			"keccak256": "0xe122f073b480afa2baf1fc5504f47fdccf894d584a28f25829cb33a76e21bb9e",
+		"Day46_ERC20_flat.sol": {
+			"keccak256": "0xa63cba94880746ded5106dc87e5023f5450fb27d62dbefc0f51dfa5347529dde",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://55f66f5f820de218d9e1703124570aa391fa7c26aa066f859012f053f357749e",
-				"dweb:/ipfs/QmV8Yw58Ghn8FLGVJJ5B1meGkrnD1CRFRdwFkv8GnaCHe2"
+				"bzz-raw://48b0e09c0adba70a9ab1629a119e7a67e68950fed9b6d58cc32ac4733f8e2248",
+				"dweb:/ipfs/QmVeDhpPyJ9RsKJBJz27sKpdysRGMVN1abTsVNCWVV4dRz"
 			]
 		}
 	},

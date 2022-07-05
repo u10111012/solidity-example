@@ -6,7 +6,6 @@
 	"output": {
 		"abi": [],
 		"devdoc": {
-			"details": "Collection of functions related to the address type",
 			"kind": "dev",
 			"methods": {},
 			"version": 1
@@ -19,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Day52_ERC1155_flat.sol": "Address"
+			"Day58_ERC721Example.sol": "Address"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -33,12 +32,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Day52_ERC1155_flat.sol": {
-			"keccak256": "0xe122f073b480afa2baf1fc5504f47fdccf894d584a28f25829cb33a76e21bb9e",
+		"Day58_ERC721Example.sol": {
+			"keccak256": "0x859f5de989198271048935e6539fa6147410e05ab154b54705712abd020c3ac3",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://55f66f5f820de218d9e1703124570aa391fa7c26aa066f859012f053f357749e",
-				"dweb:/ipfs/QmV8Yw58Ghn8FLGVJJ5B1meGkrnD1CRFRdwFkv8GnaCHe2"
+				"bzz-raw://f2ec2b4df66b4b9cfe6a33e782ada60a849cd20102ec27192742e1cd92d62927",
+				"dweb:/ipfs/QmQKrBcY4Qp4yVEgGQ5RTAdGwnWq4EFzB99pD8DNuTFkEC"
 			]
 		}
 	},

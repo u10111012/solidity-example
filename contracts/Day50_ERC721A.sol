@@ -11,3 +11,4 @@ contract Azuki is ERC721A {
     _safeMint(msg.sender, quantity);
   }
 }
+
